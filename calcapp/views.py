@@ -159,4 +159,5 @@ def matrix_calculator(request):
             return JsonResponse({'error': f'Неверный ввод: {e}'}, status=400)
     
 
-    return render(request, '/calc/calcapp/index.html')
+    return render(request, 'calc/index.html')
+
